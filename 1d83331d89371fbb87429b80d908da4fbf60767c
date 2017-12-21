@@ -1,0 +1,203 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a6ced46_234f4a94",
+        "filename": "python-networking-l2gw-tests-tempest.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 432
+      },
+      "writtenOn": "2017-12-21T10:50:03Z",
+      "side": 1,
+      "message": "%if 0%{?fedora}\n%global with_python3 1\n%endif",
+      "revId": "1d83331d89371fbb87429b80d908da4fbf60767c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_23682af5",
+        "filename": "python-networking-l2gw-tests-tempest.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 432
+      },
+      "writtenOn": "2017-12-21T10:50:03Z",
+      "side": 1,
+      "message": "BuildRequires: git",
+      "revId": "1d83331d89371fbb87429b80d908da4fbf60767c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_e3a61253",
+        "filename": "python-networking-l2gw-tests-tempest.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 432
+      },
+      "writtenOn": "2017-12-21T10:50:03Z",
+      "side": 1,
+      "message": "whitespace",
+      "revId": "1d83331d89371fbb87429b80d908da4fbf60767c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_c3a91626",
+        "filename": "python-networking-l2gw-tests-tempest.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 432
+      },
+      "writtenOn": "2017-12-21T10:50:03Z",
+      "side": 1,
+      "message": "not a requirement: https://github.com/openstack/networking-l2gw-tempest-plugin/blob/master/requirements.txt",
+      "range": {
+        "startLine": 53,
+        "startChar": 0,
+        "endLine": 53,
+        "endChar": 29
+      },
+      "revId": "1d83331d89371fbb87429b80d908da4fbf60767c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_6349428b",
+        "filename": "python-networking-l2gw-tests-tempest.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 432
+      },
+      "writtenOn": "2017-12-21T10:50:03Z",
+      "side": 1,
+      "message": "%if 0%{?with_python3}\n%package -n python3-%{service}-tests-tempest\nSummary: %{summary}\n%{?python_provide:%python_provide python3-%{service}-tests-tempest}\n\n[...]\n\n%endif",
+      "revId": "1d83331d89371fbb87429b80d908da4fbf60767c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_03632e1b",
+        "filename": "python-networking-l2gw-tests-tempest.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 432
+      },
+      "writtenOn": "2017-12-21T10:50:03Z",
+      "side": 1,
+      "message": "BuildRequires:  python-sphinx\nBuildRequires:  python-oslo-sphinx",
+      "revId": "1d83331d89371fbb87429b80d908da4fbf60767c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_83763ed7",
+        "filename": "python-networking-l2gw-tests-tempest.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 432
+      },
+      "writtenOn": "2017-12-21T10:50:03Z",
+      "side": 1,
+      "message": "%autosetup -n %{plugin}-%{upstream_version} -S git",
+      "revId": "1d83331d89371fbb87429b80d908da4fbf60767c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_a3733ae6",
+        "filename": "python-networking-l2gw-tests-tempest.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 432
+      },
+      "writtenOn": "2017-12-21T10:50:03Z",
+      "side": 1,
+      "message": "%if 0%{?with_python3}\n%py3_build\n%endif",
+      "revId": "1d83331d89371fbb87429b80d908da4fbf60767c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_c380368e",
+        "filename": "python-networking-l2gw-tests-tempest.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 432
+      },
+      "writtenOn": "2017-12-21T10:50:03Z",
+      "side": 1,
+      "message": "%if 0%{?with_python3}\n%py3_install\n%endif",
+      "revId": "1d83331d89371fbb87429b80d908da4fbf60767c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_e37d32b3",
+        "filename": "python-networking-l2gw-tests-tempest.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 432
+      },
+      "writtenOn": "2017-12-21T10:50:03Z",
+      "side": 1,
+      "message": "%if 0%{?with_python3}\n%files -n python3-%{service}-tests-tempest\n%license LICENSE\n%doc README.rst\n%{python3_sitelib}/%{module}\n%{python3_sitelib}/*.egg-info\n%endif",
+      "revId": "1d83331d89371fbb87429b80d908da4fbf60767c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_034a4e83",
+        "filename": "python-networking-l2gw-tests-tempest.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 432
+      },
+      "writtenOn": "2017-12-21T10:50:03Z",
+      "side": 1,
+      "message": "no changelog messages in rpm-master",
+      "range": {
+        "startLine": 102,
+        "startChar": 0,
+        "endLine": 103,
+        "endChar": 18
+      },
+      "revId": "1d83331d89371fbb87429b80d908da4fbf60767c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
