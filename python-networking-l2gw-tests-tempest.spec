@@ -1,7 +1,7 @@
 %global service networking-l2gw
 %global plugin networking-l2gw-tempest-plugin
 %global module networking_l2gw_tempest_plugin
-%global with_doc 0
+%global with_doc 1
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 %if 0%{?fedora}
