@@ -21,6 +21,8 @@ License:    ASL 2.0
 URL:        https://git.openstack.org/cgit/openstack/%{plugin}
 Source0:    https://files.pythonhosted.org/packages/source/n/%{plugin}/%{plugin}-%{version}.tar.gz
 BuildArch:  noarch
+BuildRequires:  git
+BuildRequires:  openstack-macros
 
 %description
 %{common_desc}
@@ -29,18 +31,16 @@ BuildArch:  noarch
 Summary:    Tempest Plugin for Neutron L2 Gateway
 %{?python_provide:%python_provide python2-%{service}-tests-tempest}
 
-BuildRequires:  git
-BuildRequires:  openstack-macros
-BuildRequires:  python-setuptools
+BuildRequires:  python2-setuptools
 BuildRequires:  python2-devel
-BuildRequires:  python-pbr
+BuildRequires:  python2-pbr
 
-Requires:   python-pbr >= 2.0.0
-Requires:   python-babel >= 2.3.4
-Requires:   python-neutron-lib >= 1.9.0
-Requires:   python-neutronclient >= 6.3.0
-Requires:   python-ovsdbapp >= 0.4.0
-Requires:   python-tempest >= 1:16.0.0
+Requires:   python2-pbr >= 2.0.0
+Requires:   python2-babel >= 2.3.4
+Requires:   python2-neutron-lib >= 1.9.0
+Requires:   python2-neutronclient >= 6.3.0
+Requires:   python2-ovsdbapp >= 0.4.0
+Requires:   python2-tempest >= 1:17.2.0
 
 %description -n python2-%{service}-tests-tempest
 %{common_desc}
@@ -59,7 +59,7 @@ Requires:   python3-babel >= 2.3.4
 Requires:   python3-neutron-lib >= 1.9.0
 Requires:   python3-neutronclient >= 6.3.0
 Requires:   python3-ovsdbapp >= 0.4.0
-
+Requires:   python3-tempest >= 1:17.2.0
 
 %description -n python3-%{service}-tests-tempest
 %{common_desc}
@@ -70,8 +70,8 @@ Requires:   python3-ovsdbapp >= 0.4.0
 %package -n python-%{service}-tests-tempest-doc
 Summary:    python-%{service}-tests-tempest documentation
 
-BuildRequires:  python-sphinx
-BuildRequires:  python-oslo-sphinx
+BuildRequires:  python2-sphinx
+BuildRequires:  python2-oslo-sphinx
 
 %description -n python-%{service}-tests-tempest-doc
 It contains the documentation for the Neutron L2GW tempest plugin.
