@@ -1,8 +1,13 @@
+%{!?upstream_version: %global upstream_version %{commit}}
+%global commit 8a8ec704fc5f9174b487bcde4c8228cd7dc898f9
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
 %global service networking-l2gw
 %global plugin networking-l2gw-tempest-plugin
 %global module networking_l2gw_tempest_plugin
 %global with_doc 1
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 %if 0%{?fedora}
 %global with_python3 1
@@ -14,12 +19,12 @@ containing tests used to verify the functionality of the Neutron L2GW service \
 plugin. The plugin will automatically load these tests into tempest.
 
 Name:       python-%{service}-tests-tempest
-Version:    XXX
-Release:    XXX
+Version:    0.0.1
+Release:    0.1%{?alphatag}%{?dist}
 Summary:    Tempest Plugin for Neutron L2 Gateway
 License:    ASL 2.0
 URL:        https://git.openstack.org/cgit/openstack/%{plugin}
-Source0:    https://files.pythonhosted.org/packages/source/n/%{plugin}/%{plugin}-%{version}.tar.gz
+Source0:    http://github.com/openstack/%{plugin}/archive/%{commit}.tar.gz#/%{plugin}-%{shortcommit}.tar.gz
 BuildArch:  noarch
 BuildRequires:  git
 BuildRequires:  openstack-macros
@@ -125,3 +130,5 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+* Mon Feb 19 2018 Chandan Kumar <chkumar@redhat.com> 0.0.1-0.1.8a8ec704git
+- Update to pre-release 0.0.1 (8a8ec704fc5f9174b487bcde4c8228cd7dc898f9)
