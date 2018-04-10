@@ -22,6 +22,30 @@
       "revId": "430f63092683598e9d79065c5677b9056d67b136",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ab14d0d_2026c968",
+        "filename": "python-networking-l2gw-tests-tempest.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 273
+      },
+      "writtenOn": "2018-04-10T13:28:20Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1ab14d0d_200fe9e2",
+      "range": {
+        "startLine": 42,
+        "startChar": 41,
+        "endLine": 42,
+        "endChar": 42
+      },
+      "revId": "430f63092683598e9d79065c5677b9056d67b136",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
