@@ -39,6 +39,7 @@ Requires:   python2-pbr >= 2.0.0
 Requires:   python2-babel >= 2.3.4
 Requires:   python2-neutron-lib >= 1.9.0
 Requires:   python2-neutronclient >= 6.3.0
+Requires:   python2-neutron-tests-tempest 
 Requires:   python2-ovsdbapp >= 0.4.0
 Requires:   python2-tempest >= 1:17.2.0
 
