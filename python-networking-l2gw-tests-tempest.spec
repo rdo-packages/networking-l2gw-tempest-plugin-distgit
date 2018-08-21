@@ -35,13 +35,13 @@ BuildRequires:  python2-setuptools
 BuildRequires:  python2-devel
 BuildRequires:  python2-pbr
 
-Requires:   python2-pbr >= 2.0.0
+Requires:   python2-pbr >= 3.1.1
 Requires:   python2-babel >= 2.3.4
-Requires:   python2-neutron-lib >= 1.9.0
-Requires:   python2-neutronclient >= 6.3.0
+Requires:   python2-neutron-lib >= 1.13.0
+Requires:   python2-neutronclient >= 6.7.0
 Requires:   python2-neutron-tests-tempest
-Requires:   python2-ovsdbapp >= 0.4.0
-Requires:   python2-tempest >= 1:17.2.0
+Requires:   python2-ovsdbapp >= 0.10.0
+Requires:   python2-tempest >= 1:18.0.0
 
 %description -n python2-%{service}-tests-tempest
 %{common_desc}
@@ -55,12 +55,12 @@ BuildRequires:  python3-setuptools
 BuildRequires:  python3-devel
 BuildRequires:  python3-pbr
 
-Requires:   python3-pbr >= 2.0.0
+Requires:   python3-pbr >= 3.1.1
 Requires:   python3-babel >= 2.3.4
-Requires:   python3-neutron-lib >= 1.9.0
-Requires:   python3-neutronclient >= 6.3.0
-Requires:   python3-ovsdbapp >= 0.4.0
-Requires:   python3-tempest >= 1:17.2.0
+Requires:   python3-neutron-lib >= 1.13.0
+Requires:   python3-neutronclient >= 6.7.0
+Requires:   python3-ovsdbapp >= 0.10.0
+Requires:   python3-tempest >= 1:18.0.0
 
 %description -n python3-%{service}-tests-tempest
 %{common_desc}
