@@ -58,7 +58,8 @@ Requires:   python%{pyver}-tempest >= 1:18.0.0
 Summary:    python-%{service}-tests-tempest documentation
 
 BuildRequires:  python%{pyver}-sphinx
-BuildRequires:  python%{pyver}-oslo-sphinx
+BuildRequires:  python%{pyver}-openstackdocstheme
+BuildRequires:  python%{pyver}-reno
 
 %description -n python-%{service}-tests-tempest-doc
 It contains the documentation for the Neutron L2GW tempest plugin.
@@ -77,7 +78,7 @@ rm -rf %{plugin}.egg-info
 
 # Generate Docs
 %if 0%{?with_doc}
-%{pyver_bin} setup.py build_sphinx -b html
+sphinx-build-%{pyver} -W -b html doc/source doc/build/html
 # remove the sphinx build leftovers
 rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
