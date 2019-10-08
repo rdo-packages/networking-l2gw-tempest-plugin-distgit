@@ -13,7 +13,11 @@
 %global plugin networking-l2gw-tempest-plugin
 %global module networking_l2gw_tempest_plugin
 %global with_doc 1
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
+%global commit a3af33b319e5605791b0c95b7bbfdd81a814877c
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
 
 %global common_desc \
 Tempest Plugin for Neutron L2GW This project defines a tempest plugin \
@@ -21,12 +25,12 @@ containing tests used to verify the functionality of the Neutron L2GW service \
 plugin. The plugin will automatically load these tests into tempest.
 
 Name:       python-%{service}-tests-tempest
-Version:    XXX
-Release:    XXX
+Version:    0.1.0
+Release:    1%{alphatag}%{?dist}
 Summary:    Tempest Plugin for Neutron L2 Gateway
 License:    ASL 2.0
 URL:        https://git.openstack.org/cgit/openstack/%{plugin}
-Source0:    https://files.pythonhosted.org/packages/source/n/%{plugin}/%{plugin}-%{version}.tar.gz
+Source0:    https://github.com/openstack/%{plugin}/archive/%{upstream_version}.tar.gz#/%{name}-%{shortcommit}.tar.gz
 BuildArch:  noarch
 BuildRequires:  git
 BuildRequires:  openstack-macros
@@ -99,3 +103,5 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+* Tue Oct 8 2019 RDO <dev@lists.rdoproject.org> 0.1.0-1.a3af33bgit
+- Update to post 0.1.0 (a3af33b319e5605791b0c95b7bbfdd81a814877c)
