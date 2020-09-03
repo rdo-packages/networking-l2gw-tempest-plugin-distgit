@@ -88,3 +88,4 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/networking-l2gw-tempest-plugin/commit/?id=908a6a491c1253a2d519f226012935046433b7f0
