@@ -31,9 +31,9 @@ BuildRequires:  python3-setuptools
 BuildRequires:  python3-devel
 BuildRequires:  python3-pbr
 
-Requires:   python3-pbr >= 3.1.1
+Requires:   python3-pbr >= 4.0.0
 Requires:   python3-babel >= 2.3.4
-Requires:   python3-neutron-lib >= 1.13.0
+Requires:   python3-neutron-lib >= 1.30.0
 Requires:   python3-neutronclient >= 6.7.0
 Requires:   python3-neutron-tests-tempest
 Requires:   python3-ovsdbapp >= 0.10.0
