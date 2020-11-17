@@ -17,7 +17,7 @@ License:    ASL 2.0
 URL:        https://git.openstack.org/cgit/openstack/%{plugin}
 Source0:    https://files.pythonhosted.org/packages/source/n/%{plugin}/%{plugin}-%{version}.tar.gz
 BuildArch:  noarch
-BuildRequires:  git
+BuildRequires:  git-core
 BuildRequires:  openstack-macros
 
 %description
