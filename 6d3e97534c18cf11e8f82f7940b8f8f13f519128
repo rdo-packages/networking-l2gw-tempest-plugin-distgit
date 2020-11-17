@@ -1,0 +1,9 @@
+Code-Review+2: Chandan Kumar <chkumar@redhat.com>
+Code-Review+2: Joel Capitao <jcapitao@redhat.com>
+Workflow+1: Joel Capitao <jcapitao@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Tue, 17 Nov 2020 13:30:17 +0000
+Reviewed-on: https://review.rdoproject.org/r/31029
+Project: openstack/networking-l2gw-tempest-plugin-distgit
+Branch: refs/heads/rpm-master
