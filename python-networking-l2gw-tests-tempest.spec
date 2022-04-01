@@ -10,8 +10,8 @@ containing tests used to verify the functionality of the Neutron L2GW service \
 plugin. The plugin will automatically load these tests into tempest.
 
 Name:       python-%{service}-tests-tempest
-Version:    XXX
-Release:    XXX
+Version:    0.1.0
+Release:    1%{?dist}
 Summary:    Tempest Plugin for Neutron L2 Gateway
 License:    ASL 2.0
 URL:        https://git.openstack.org/cgit/openstack/%{plugin}
@@ -88,3 +88,6 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+* Fri Apr 01 2022 RDO <dev@lists.rdoproject.org> 0.1.0-1
+- Update to 0.1.0
+
