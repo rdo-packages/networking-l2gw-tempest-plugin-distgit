@@ -2,6 +2,7 @@
 %global plugin networking-l2gw-tempest-plugin
 %global module networking_l2gw_tempest_plugin
 %global with_doc 1
+<<<<<<< HEAD   (79cb36 ManageSF commit)
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 # we are excluding some BRs from automatic generator
 %global excluded_brs doc8 bandit pre-commit hacking flake8-import-order bashate isort pylint astroid
@@ -9,6 +10,16 @@
 %if ! 0%{?with_doc}
 %global excluded_brs %{excluded_brs} sphinx openstackdocstheme
 %endif
+=======
+%{!?upstream_version: %global upstream_version %{commit}}
+%global commit 82e3d07ea410e1489c6a83e5a4b9557d52643d41
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
+%{?dlrn: %global tarsources %{plugin}-%{upstream_version}}
+%{!?dlrn: %global tarsources %{plugin}}
+>>>>>>> CHANGE (fffd8d python-networking-l2gw-tests-tempest-0.1.0-3)
 
 %global common_desc \
 Tempest Plugin for Neutron L2GW This project defines a tempest plugin \
@@ -16,12 +27,12 @@ containing tests used to verify the functionality of the Neutron L2GW service \
 plugin. The plugin will automatically load these tests into tempest.
 
 Name:       python-%{service}-tests-tempest
-Version:    XXX
-Release:    XXX
+Version:    0.1.0
+Release:    3%{?alphatag}%{?dist}
 Summary:    Tempest Plugin for Neutron L2 Gateway
 License:    Apache-2.0
 URL:        https://git.openstack.org/cgit/openstack/%{plugin}
-Source0:    https://files.pythonhosted.org/packages/source/n/%{plugin}/%{plugin}-%{version}.tar.gz
+Source0:    http://opendev.org/x/%{plugin}/archive/%{upstream_version}.tar.gz#/%{module}-%{shortcommit}.tar.gz
 BuildArch:  noarch
 BuildRequires:  git-core
 BuildRequires:  openstack-macros
@@ -50,7 +61,7 @@ It contains the documentation for the Neutron L2GW tempest plugin.
 %endif
 
 %prep
-%autosetup -n %{plugin}-%{upstream_version} -S git
+%autosetup -n %{tarsources} -S git
 
 
 sed -i /^[[:space:]]*-c{env:.*_CONSTRAINTS_FILE.*/d tox.ini
@@ -101,3 +112,6 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+* Fri Apr 01 2022 RDO <dev@lists.rdoproject.org> 0.1.0-3
+- Update to post 0.1.0 (82e3d07ea410e1489c6a83e5a4b9557d52643d41)
+
