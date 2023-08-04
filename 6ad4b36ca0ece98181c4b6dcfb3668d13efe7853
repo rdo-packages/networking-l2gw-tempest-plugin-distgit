@@ -22,6 +22,30 @@
       },
       "revId": "6ad4b36ca0ece98181c4b6dcfb3668d13efe7853",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e7f619c_5a0142e9",
+        "filename": "python-networking-l2gw-tests-tempest.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-08-04T15:04:48Z",
+      "side": 1,
+      "message": "but let\u0027s keep it for backward compatibility",
+      "parentUuid": "9be37701_4de881b5",
+      "range": {
+        "startLine": 38,
+        "startChar": 0,
+        "endLine": 38,
+        "endChar": 41
+      },
+      "revId": "6ad4b36ca0ece98181c4b6dcfb3668d13efe7853",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
