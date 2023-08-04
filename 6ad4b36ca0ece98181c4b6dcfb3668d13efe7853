@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9be37701_4de881b5",
+        "filename": "python-networking-l2gw-tests-tempest.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2023-08-04T14:41:39Z",
+      "side": 1,
+      "message": "I checkout on the current pinned 82e3d07ea410e1489c6a83e5a4b9557d52643d41, I then grep -r neutron_tempest_plugin to check if neutron-tempest-plugin was still used and it\u0027s not.",
+      "range": {
+        "startLine": 38,
+        "startChar": 0,
+        "endLine": 38,
+        "endChar": 41
+      },
+      "revId": "6ad4b36ca0ece98181c4b6dcfb3668d13efe7853",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
